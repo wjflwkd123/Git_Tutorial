@@ -8,4 +8,12 @@ public class UserController {
 
         return "user/login";
     }
+
+    // 로그인페이지로 이동
+    @RequestMapping("/user/insert.do) {
+    public String insert() {
+        logger.info("경로 : insert")
+
+        return "user/insert";
+    }
 }
